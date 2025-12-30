@@ -17,7 +17,7 @@ Download & open the PDF file
 
 
 ## Author
-**SIDHANT DNYANESHWAR DANGE**  
+SIDHANT DNYANESHWAR DANGE  
 COMPUTER ENGINEEERING  
 
   
