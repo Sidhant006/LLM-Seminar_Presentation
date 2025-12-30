@@ -1,5 +1,5 @@
 # LLM-Seminar_Presentation
-this repository contains a **Seminar Presentation on Large Language Model : Vector Data Representaion Techniques** created using **LaTeX Beamer**
+This repository contains a **Seminar Presentation on Large Language Model : Vector Data Representaion Techniques** created using **LaTeX Beamer**
 
 # Project Details :
 **Topics :** Large Language Model : Vector Data REpresentation Technique
