@@ -1,0 +1,27 @@
+\begin{tikzpicture}[remember picture,overlay,xshift=8.8cm,yshift=-1.2cm]
+
+% ===== HEADING =====
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-9.2,4.0) {Self-Attention Details};
+
+% ===== EXPLANATION BLOCK =====
+\node[anchor=west, text width=12cm, align=left, text=white, font=\small] 
+at (-9.2,0.5) {
+
+\textbf{1. Token Interaction:}  
+Each token attends to all other tokens in the sequence.\\[10pt]
+
+\textbf{2. Attention Scores:}  
+Calculated using dot-products between query and key vectors.\\[10pt]
+
+\textbf{3. Softmax Weights:}  
+Scores are normalized to highlight important relationships.\\[10pt]
+
+\textbf{4. Weighted Values:}  
+Information is aggregated using attention weights.\\[10pt]
+
+\textbf{5. Parallel Processing:}  
+Attention allows tokens to be processed simultaneously.\\
+};
+
+\end{tikzpicture}

@@ -1,0 +1,81 @@
+\begin{tikzpicture}[remember picture,overlay,xshift=9.5cm,yshift=-1.2cm]
+
+\definecolor{mygreen}{HTML}{009879}
+
+% Center node
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=2.2cm,
+  text=black, align=center,     % changed here
+  fill=mygreen!12
+] (center) at (0,0) {Introduction\\to LLM};
+
+% Important close nodes
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.8cm,
+  text=black, align=center,     % changed here
+  fill=mygreen!18
+] (p1) at (-3,-1.4) {Data};
+
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.8cm,
+  text=black, align=center,     % changed here
+  fill=mygreen!18
+] (p2) at (3,-0.5) {Output};
+
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.8cm,
+  text=black, align=center,     % changed here
+  fill=mygreen!18
+] (p4) at (-3,1.4)
+ {Task};
+
+% Less important far nodes
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.6cm,
+  text=black, align=center,     % changed here
+  fill=mygreen!8
+] (p3) at (4.6,-3.2) {Model};
+
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.6cm,
+  text=black, align=center,     % changed here
+  fill=mygreen!8
+] (p5) at (0,4) {Usage};
+
+% Connecting lines
+\draw[white, line width=1.2pt] (center) -- (p1);
+\draw[white, line width=1.2pt] (center) -- (p2);
+\draw[white, line width=1.2pt] (center) -- (p4);
+
+\draw[white, line width=0.9pt] (center) -- (p3);
+\draw[white, line width=0.9pt] (center) -- (p5);
+% Heading
+\node[anchor=west, text=offwhite, font=\bfseries\Large] at (-10,4.0) {Introduction to LLM};
+
+
+
+% Bullet block
+\node[anchor=west, text width=7cm, align=left, text=offwhite, font=\small] at (-10,0.5) {
+\textbf{1. Training Data:}  
+LLMs learn from huge text datasets.\\[8pt]
+
+\textbf{2. Human Output:}  
+They generate\\responses like humans.\\[8pt]
+
+\textbf{3. NLP Tasks:}  
+Used for translation,\\summary, Q\&A.\\[8pt]
+
+\textbf{4. Transformer:}  
+Works using self-\\attention mechanism.\\[8pt]
+
+\textbf{5. Applications:}  
+Chatbots, coding \newline tools,search engines.
+};
+
+\end{tikzpicture}

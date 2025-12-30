@@ -1,0 +1,29 @@
+\begin{tikzpicture}[remember picture,overlay,xshift=11cm,yshift=-1.2cm]
+\node at (1.0,0.50) {\includegraphics[width=5cm]{embedding.png}};
+
+% ===== HEADING =====
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-11.5,4) {Vector Representation in LLMs};
+
+% ===== EXPLANATION BLOCK =====
+\node[anchor=west, text width=10cm, align=left, text=white, font=\small] 
+at (-11.5,0.5) {
+
+\textbf{1. Vectors from Tokens:}  
+LLMs convert each token into \newline a numerical vector.\\[6pt]
+
+\textbf{2. Semantic Meaning:}  
+Words with similar meaning \newline 
+have similar vector positions.\\[6pt]
+
+\textbf{3. High Dimensions:}  
+Embeddings exist in 256–2048 \newline dimensional mathematical space.\\[6pt]
+
+\textbf{4. Context Encoding:}  
+Grammar, relationships, and\newline  patterns are stored in vector form.\\[6pt]
+
+\textbf{5. Input to Transformer:}  
+These vectors enter the attention \newline layers for processing.\\[6pt]
+};
+
+\end{tikzpicture}

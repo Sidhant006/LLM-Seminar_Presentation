@@ -1,0 +1,183 @@
+\documentclass[aspectratio=169]{beamer}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+
+% Off-white color
+\definecolor{offwhite}{RGB}{242,242,242}
+\setbeamercolor{normal text}{fg=offwhite}
+
+% ---------------- PER-SLIDE BACKGROUND COMMAND ----------------
+% This overrides the background ONLY for the next frame.
+\newcommand{\setbg}[1]{%
+  \usebackgroundtemplate{%
+    \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+  }%
+}
+
+% ---------------- DEFAULT BACKGROUND (Slide 1 uses this) ----------------
+\usebackgroundtemplate{
+    \includegraphics[width=\paperwidth,height=\paperheight]{bgxy.jpg}
+}
+
+\setbeamertemplate{navigation symbols}{}
+
+\begin{document}
+
+% ============================================================
+% ======================= SLIDE 1 ============================
+% ============================================================
+
+\begin{frame}[plain]
+
+% ---- TITLE ----
+\begin{center}
+\begin{center}
+\begin{center}
+{\fontsize{16pt}{18pt}\bfseries
+\hspace*{1.5cm} Dr. Babasaheb Ambedkar Technological University, Lonere
+}
+\end{center}
+\end{center}
+\end{center}
+
+\vspace{1cm}    % moves all details downward
+
+% ---- DETAILS ----
+{\fontsize{12pt}{14pt}\selectfont
+\textbf{Presented by:} Sidhant Dnyaneshwar Dange\\[5pt]
+\textbf{PRN:} 24030331245009\\[5pt]
+\textbf{Subject:} Seminar\\[5pt]
+\textbf{Title:} Large Language Model : Vector Data Representation Technique\\[5pt]
+\textbf{Batch:} A\\[5pt]
+\textbf{Branch:} Computer Engineering\\[5pt]
+\textbf{Guided by:} Prof. Dr. Laxman.D. Netak
+}
+
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 2 ============================
+% ============================================================
+% Set background ONLY for slide 2
+\setbg{slide2.jpg}
+
+\begin{frame}[plain]
+    \input{slide2}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 3 ============================
+% ============================================================
+\setbg{slide3.jpg}
+\begin{frame}[plain]
+    \input{slide3}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 4 ============================
+% ============================================================
+\setbg{slide4.jpg}
+\begin{frame}[plain]
+    \input{slide4}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 5 ============================
+% ============================================================
+\setbg{slide5.jpg}
+\begin{frame}[plain]
+    \input{slide5}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 6 ============================
+% ============================================================
+\setbg{slide6.jpg}
+\begin{frame}[plain]
+    \input{slide6}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 7 ============================
+% ============================================================
+\setbg{slide7.jpg}
+\begin{frame}[plain]
+    \input{slide7}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 8 ============================
+% ============================================================
+\setbg{slide8.jpg}
+\begin{frame}[plain]
+    \input{slide8}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 10 ===========================
+% ============================================================
+\setbg{slide8.jpg}
+\begin{frame}[plain]
+    \input{slide10}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 11 ===========================
+% ============================================================
+\setbg{slide7.jpg}
+\begin{frame}[plain]
+    \input{slide11}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 12 ===========================
+% ============================================================
+\setbg{slide5.jpg}
+\begin{frame}[plain]
+    \input{slide12}
+\end{frame}
+
+
+% ============================================================
+% ======================= SLIDE 14 ===========================
+% ============================================================
+\setbg{slide4.jpg}
+\begin{frame}[plain]
+    \input{slide14}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 15 ===========================
+% ============================================================
+\setbg{slide3.jpg}
+\begin{frame}[plain]
+    \input{slide15}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 16 ===========================
+% ============================================================
+\setbg{slide7.jpg}
+\begin{frame}[plain]
+    \input{slide16}
+\end{frame}
+
+% ============================================================
+% ======================= SLIDE 17 ===========================
+% ============================================================
+\setbg{slide8.jpg}
+\begin{frame}[plain]
+    \input{slide17}
+\end{frame}
+
+\setbg{slide8.jpg}
+\begin{frame}[plain]
+    \input{slide18}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,73 @@
+\begin{tikzpicture}[remember picture, overlay, xshift=5.5cm, yshift=-0.9cm]
+
+\definecolor{mygreen}{HTML}{009879}
+
+% ===== HEADING =====
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-6.0,3.8) {Residual Connections and Layer Normalization};
+
+% =======================
+%       FLOWCHART
+% =======================
+
+% Box 1
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b1) at (5,2.5) {Input (x)};
+
+% Arrow 1 — FIXED
+\draw[->, line width=1.2pt, mygreen] (b1.south) -- ++(0,-0.4);
+
+% Box 2
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b2) at (5,0.9) {Sub-Layer};
+
+% Arrow 2 — FIXED
+\draw[->, line width=1.2pt, mygreen] (b2.south) -- ++(0,-0.5);
+
+% Box 3
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b3) at (5,-0.7) {Add Residual};
+
+% Arrow 3 — FIXED
+\draw[->, line width=1.2pt, mygreen] (b3.south) -- ++(0,-0.2);
+
+% Box 4
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b4) at (5,-2.1) {LayerNorm};
+
+% Arrow 4 — FIXED (slightly shorter)
+\draw[->, line width=1.2pt, mygreen] (b4.south) -- ++(0,-0.3);
+
+% Box 5
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b5) at (5,-3.5) {Output};
+
+% ==========================
+%  EXPLANATION BLOCK (LEFT)
+% ==========================
+
+\node[anchor=west, text width=7.8cm, align=left, text=white, font=\small] 
+at (-6.0,0) {
+
+\textbf{1. Residual Path:}  
+The original input (x) is added back to the sub-layer output.\\[10pt]
+
+\textbf{2. Prevents Gradient Loss:}  
+Helps gradients flow smoothly through deep layers.\\[10pt]
+
+\textbf{3. Layer Normalization:}  
+Normalizes activations to maintain stable distributions.\\[10pt]
+
+\textbf{4. Faster Training:}  
+Normalization helps the model converge efficiently.\\[10pt]
+
+\textbf{5. Supports Deep Models:}  
+Residual + LayerNorm enables very deep Transformers.\\
+};
+
+\end{tikzpicture}

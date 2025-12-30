@@ -1,0 +1,27 @@
+\begin{tikzpicture}[remember picture,overlay,xshift=8.8cm,yshift=-1.2cm]
+
+% ===== HEADING =====
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-9.2,4.0) {Attention Mechanism in LLMs};
+
+% ===== EXPLANATION BLOCK =====
+\node[anchor=west, text width=12cm, align=left, text=white, font=\small] 
+at (-9.2,0.5) {
+
+\textbf{1. Query, Key, Value:}  
+Each token is converted into query, key, and value vectors for comparison.\\[10pt]
+
+\textbf{2. Relevance Scoring:}  
+Attention computes how strongly one token should focus on others.\\[10pt]
+
+\textbf{3. Softmax Weighting:}  
+Scores are normalized into probabilities for stable attention.\\[10pt]
+
+\textbf{4. Weighted Output:}  
+Each token receives information from all others through weighted values.\\[10pt]
+
+\textbf{5. Multi-Head Attention:}  
+Multiple heads capture different relationships simultaneously.\\
+};
+
+\end{tikzpicture}

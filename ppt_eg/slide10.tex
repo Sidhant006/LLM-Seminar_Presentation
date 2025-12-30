@@ -1,0 +1,31 @@
+\begin{tikzpicture}[remember picture,overlay,xshift=11cm,yshift=-1.2cm]
+
+% ===== IMAGE (scaled smaller for clean layout) =====
+\node at (1.0,0.50) {\includegraphics[width=5.0cm]{t-SNE.png}};
+
+% ===== HEADING =====
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-11.3,4.0) {Multi-Head Attention in LLMs};
+
+% ===== EXPLANATION BLOCK =====
+\node[anchor=west, text width=10cm, align=left, text=white, font=\small]
+at (-11.3,0.3) {
+
+\textbf{1. Parallel Attention Heads:}  
+Multiple attention heads run simultaneously to capture different types of relationships.\\[8pt]
+
+\textbf{2. Diverse Feature Extraction:}  
+Each head learns unique \newline patterns such as syntax, semantics, or long-range dependencies.\\[8pt]
+
+\textbf{3. Independent Projections:}  
+Input vectors are \newline transformed separately for each head using learned weight\newline matrices.\\[8pt]
+
+\textbf{4. Scaled Dot-Product Attention:}  
+Each head \newline computes attention using Query, Key, and Value projections.\\[8pt]
+
+\textbf{5. Concatenation \& Final Output:}  
+Outputs from all \newline heads are combined and linearly transformed to form the final\newline representation.\\[4pt]
+};
+
+\end{tikzpicture}
+

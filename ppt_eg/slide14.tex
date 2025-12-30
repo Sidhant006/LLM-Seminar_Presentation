@@ -1,0 +1,30 @@
+\begin{tikzpicture}[remember picture,overlay,xshift=10cm,yshift=-1.2cm]
+
+% ===== IMAGE (no change) =====
+\node at (1.0,0.50) {\includegraphics[width=7cm]{heatmap.png}};
+
+% ===== HEADING =====
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-10.5,4.0) {Positional Encoding in LLMs};
+
+% ===== EXPLANATION BLOCK =====
+\node[anchor=west, text width=10cm, align=left, text=white, font=\small] 
+at (-10.5,0.5) {
+
+\textbf{1. Adds Word Order Information:}  
+Transformers do not understand sequence order, so positional \newline encoding provides it.\\[10pt]
+
+\textbf{2. Sinusoidal Functions:}  
+Positions are encoded \newline using sine and cosine waves of different frequencies.\\[10pt]
+
+\textbf{3. Unique Position Patterns:}  
+Each position in a \newline sequence gets a unique vector based on its index.\\[10pt]
+
+\textbf{4. Smooth Generalization:}  
+The sinusoidal pattern \newline allows the model to generalize to longer sentences.\\[10pt]
+
+\textbf{5. Combined with Embeddings:}  
+Token \newline embeddings + positional encodings give full contextual meaning.\\
+};
+
+\end{tikzpicture}

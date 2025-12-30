@@ -1,0 +1,70 @@
+\begin{tikzpicture}[remember picture, overlay,xshift=5.5cm,yshift=-1.7cm]
+
+\definecolor{mygreen}{HTML}{009879}
+
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-6.0,4.0) {Transformer Processing Steps};
+% ===== FLOWCHART FIXED =====
+
+% Box 1
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b1) at (7,3.0) {Input Vectors};
+
+% Arrow 1
+\draw[->, line width=1.2pt, mygreen] (b1.south) -- (7,2.0);
+
+
+% Box 2
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b2) at (7,1.4) {Self-Attention};
+
+% Arrow 2
+\draw[->, line width=1.2pt, mygreen] (b2.south) -- (7,0.4);
+
+
+% Box 3
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b3) at (7,-0.2) {Multi-Head Attention};
+
+% Arrow 3
+\draw[->, line width=1.2pt, mygreen] (b3.south) -- (7,-1.0);
+
+
+% Box 4
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b4) at (7,-1.6) {Feed-Forward Layer};
+
+% Arrow 4
+\draw[->, line width=1.2pt, mygreen] (b4.south) -- (7,-2.4);
+
+
+% Box 5
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b5) at (7,-3.0) {Output Embedding};
+
+
+% ===== EXPLANATION BLOCK (LEFT SIDE) =====
+\node[anchor=west, text width=7.8cm, align=left, text=white, font=\small] 
+at (-6.0,0.5) {
+
+\textbf{1. Self-Attention:}  
+Model checks which tokens are important to each other.\\[10pt]
+
+\textbf{2. Multi-Head Attention:}  
+Multiple attention heads capture different relationships.\\[10pt]
+
+\textbf{3. Feed-Forward Layer:}  
+Each token is processed through a neural network.\\[10pt]
+
+\textbf{4. Residual Connections:}  
+Original information is preserved for stability.\\[10pt]
+
+\textbf{5. Layer Normalization:}  
+Keeps values stable and helps better learning.\\
+};
+\end{tikzpicture}

@@ -1,0 +1,71 @@
+\begin{tikzpicture}[remember picture, overlay,xshift=5.5cm,yshift=-1.7cm]
+
+\definecolor{mygreen}{HTML}{009879}
+
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-6.0,4.0) {Training Process Overview};
+% ===== FLOWCHART FIXED =====
+
+% Box 1
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b1) at (7,3.0) {Input Vectors};
+
+% Arrow 1
+\draw[->, line width=1.2pt, mygreen] (b1.south) -- (7,2.0);
+
+
+% Box 2
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b2) at (7,1.4) {Raw Text Input};
+
+% Arrow 2
+\draw[->, line width=1.2pt, mygreen] (b2.south) -- (7,0.4);
+
+
+% Box 3
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b3) at (7,-0.2) {Tokenization};
+
+% Arrow 3
+\draw[->, line width=1.2pt, mygreen] (b3.south) -- (7,-1.0);
+
+
+% Box 4
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b4) at (7,-1.6) {LLM/ Transformer};
+
+% Arrow 4
+\draw[->, line width=1.2pt, mygreen] (b4.south) -- (7,-2.4);
+
+
+% Box 5
+\node[draw=mygreen, thick, fill=mygreen!15, minimum width=3.5cm,
+      minimum height=1.1cm, text=black, align=center] 
+      (b5) at (7,-3.0) { Generated Output };
+
+
+% ===== EXPLANATION BLOCK (LEFT SIDE) =====
+\node[anchor=west, text width=7.8cm, align=left, text=white, font=\small] 
+at (-6.0,0.5) {
+
+\textbf{1. Raw Text Input:}  
+Model receives plain text from the user.\\[8pt]
+
+\textbf{2. Tokenization:}  
+Text is broken into smaller units like words or subwords.\\[8pt]
+
+\textbf{3. Vector Embeddings:}  
+Each token is converted into a numerical vector for processing.\\[8pt]
+
+\textbf{4. Transformer Processing:}  
+Model applies attention, feed-forward networks, and multiple layers.\\[8pt]
+
+\textbf{5. Generated Output:}  
+The final processed vector is decoded back into human-readable text.\\[6pt]
+
+};
+\end{tikzpicture}

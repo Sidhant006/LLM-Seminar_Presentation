@@ -1,0 +1,75 @@
+\begin{tikzpicture}[remember picture,overlay,xshift=11cm,yshift=-1.2cm]
+
+\definecolor{mygreen}{HTML}{009879}
+
+% ========== CENTER CIRCLE ==========
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=2.2cm,
+  text=black, align=center,
+  fill=mygreen!12
+] (center) at (0,0) {Attention};
+
+% ========== OUTER CIRCLES ==========
+
+% Top-left
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.8cm,
+  text=black, align=center,
+  fill=mygreen!18
+] (p1) at (-3,2) {Tokenize};
+
+% Top-right
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.8cm,
+  text=black, align=center,
+  fill=mygreen!18
+] (p2) at (3,2) {Embed};
+
+% Bottom-left
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.8cm,
+  text=black, align=center,
+  fill=mygreen!18
+] (p3) at (-3,-2) {Layers};
+
+% Bottom-right
+\node[
+  draw=mygreen, thick, circle,
+  minimum size=1.8cm,
+  text=black, align=center,
+  fill=mygreen!18
+] (p4) at (3,-2) {Output};
+
+% ========== CONNECTING LINES ==========
+\draw[white, line width=1.2pt] (center) -- (p1);
+\draw[white, line width=1.2pt] (center) -- (p2);
+\draw[white, line width=1.2pt] (center) -- (p3);
+\draw[white, line width=1.2pt] (center) -- (p4);
+
+% ========== HEADING ==========
+\node[anchor=west, text=offwhite, font=\bfseries\Large] 
+at (-11.5,4) {How LLMs Work};
+
+% ========== EXPLANATIONS LEFT ==========
+\node[anchor=west, text width=6cm, align=left, text=offwhite, font=\small] 
+at (-11.5,0.5) {
+
+\textbf{1. Tokenization:}  
+Text is broken into small units called tokens.\\[6pt]
+
+\textbf{2. Layers:}  
+Multiple transformer layers refine context and meaning.\\[6pt]
+
+\textbf{3. Embedding:}  
+Tokens are converted into vectors for processing.\\[6pt]
+
+\textbf{4. Output:}  
+LLM predicts next tokens to generate responses.\\[6pt]
+};
+
+
+\end{tikzpicture}
