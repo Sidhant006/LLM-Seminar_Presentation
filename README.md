@@ -17,9 +17,9 @@ Download & open the PDF file
 
 
 ## Author
-SIDHANT DNYANESHWAR DANGE  
+**SIDHANT DNYANESHWAR DANGE**
 COMPUTER ENGINEEERING  
 
   
 
-*This seminar was prepared as part of the academic curriculum for Computer Engineering.*
+<sub><i>This seminar was prepared as part of the academic curriculum for Computer Engineering.</i></sub>
